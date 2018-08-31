@@ -7,7 +7,7 @@
 #' @param content_title title for card content, max 70 characters
 #' @param content_description description for card content, max 200 characters
 #' @param content_image link for the content image
-#' @file file name to put in the header of Rmd doc
+#' @param file name to put in the header of Rmd doc
 #'
 #' @export
 #'

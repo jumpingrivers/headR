@@ -20,6 +20,8 @@ add_twitter_card(card = "summary", user = "@Jumping_UK",
 \item{content_description}{description for card content, max 200 characters}
 
 \item{content_image}{link for the content image}
+
+\item{file}{name to put in the header of Rmd doc}
 }
 \description{
 An easy way to create twitter summary cards for your blogdown post

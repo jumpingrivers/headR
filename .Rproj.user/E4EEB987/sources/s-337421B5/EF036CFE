@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "0",
+    "hash" : "3328294507",
     "id" : "EF036CFE",
-    "lastKnownWriteTime" : 1535712564,
-    "last_content_update" : 1535712564561,
+    "lastKnownWriteTime" : 1535712926,
+    "last_content_update" : 1535712926073,
     "path" : "~/GitHub/jr-packages/headR/R/add_twitter_card.R",
     "project_path" : "R/add_twitter_card.R",
     "properties" : {
-        "cursorPosition" : "12,2",
+        "cursorPosition" : "9,9",
         "scrollLine" : "1"
     },
     "read_only" : false,

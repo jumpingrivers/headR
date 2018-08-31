@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1535711545983.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EF036CFE",
+    "lastKnownWriteTime" : 1535712564,
+    "last_content_update" : 1535712564561,
+    "path" : "~/GitHub/jr-packages/headR/R/add_twitter_card.R",
+    "project_path" : "R/add_twitter_card.R",
+    "properties" : {
+        "cursorPosition" : "12,2",
+        "scrollLine" : "1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

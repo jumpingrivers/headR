@@ -1,0 +1,24 @@
+Package: jrGgplot2
+Type: Package
+Title: Advanced R graphics
+Version: 0.1.1
+Authors@R: person("Colin", "Gillespie",  
+  email="csgillespie@gmail.com", 
+  role = c("aut", "cre"))
+Description: An R package for the Advanced graphics R course run by Jumping Rivers Ltd.
+URL: https://jumpingrivers.com
+License: GPL-2 | GPL-3
+Depends:
+    R (>= 3.3.0)
+Imports:
+    hexbin,
+    ggplot2,
+    ggplot2movies,
+    quantreg,
+    jrData
+Remotes:
+    jr-packages/jrData
+Suggests:
+    knitr
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1

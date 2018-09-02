@@ -5,11 +5,13 @@ Version: 0.1.1
 Authors@R: person("Colin", "Gillespie",  
   email="csgillespie@gmail.com", 
   role = c("aut", "cre"))
-Description: An R package to create social media sharing cards for blog posts
+Description: An R package to create social media sharing cards for blog posts.
 URL: https://jumpingrivers.com
 License: GPL-2 | GPL-3
 Depends:
     R (>= 3.3.0)
+Imports: glue
+Suggests: knitr
 Encoding: UTF-8
 VignetteBuilder: knitr
 RoxygenNote: 6.1.0

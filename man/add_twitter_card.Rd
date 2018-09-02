@@ -4,14 +4,14 @@
 \alias{add_twitter_card}
 \title{Create twitter summary cards}
 \usage{
-add_twitter_card(card = "summary", user = "@jumping_uk",
+add_twitter_card(card_type = "summary", user = "@jumping_uk",
   content_title = "Content title",
   content_description = "Content description.",
   content_image = "https://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Ball.png",
-  file = "foo.html")
+  file = "twitter-card.html")
 }
 \arguments{
-\item{card}{must be "summary" or "summary_large_image"}
+\item{card_type}{must be "summary" or "summary_large_image"}
 
 \item{user}{twitter user id for the card to be linked to}
 

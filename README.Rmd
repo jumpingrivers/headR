@@ -25,7 +25,7 @@ HeadR is a package for creating social media summary cards to share your article
 output: 
   html_document: 
     includes:
-      in_header: twitter_card.html
+      in_header: twitter_card.HTML
 ---  
 
 ## Testing

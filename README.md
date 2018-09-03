@@ -12,7 +12,7 @@ Rmd document is as shown:
 output: 
   html_document: 
     includes:
-      in_header: twitter_card.html
+      in_header: twitter_card.HTML
 ---  
 
 ## Testing

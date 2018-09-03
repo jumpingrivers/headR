@@ -6,7 +6,7 @@
 \usage{
 add_twitter_card(card_type = "summary", user = NULL,
   content_title = NULL, content_description = NULL,
-  content_image = NULL, file = "twitter_card.HTML")
+  content_image = NULL, file = "twitter_card.html")
 }
 \arguments{
 \item{card_type}{Twitter card type. Must be "summary" or "summary_large_image".}

@@ -20,7 +20,7 @@ add_twitter_card = function(card_type = "summary",
                             content_title = NULL,
                             content_description = NULL,
                             content_image = NULL,
-                            file = "twitter_card.HTML") {
+                            file = "twitter_card.html") {
   if (is.null(content_title)) {
     stop(
       "Cards must have a content title as specified by twitter, see

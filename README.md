@@ -12,10 +12,10 @@ Rmd document is as shown:
 output: 
   html_document: 
     includes:
-      in_header: twitter_card.HTML
+      in_header: twitter_card.html
 ---  
 
 ## Testing
 
-headR::add_twitter_card(title = "This is the title!", file = "twitter_card.HTML")
+headR::add_twitter_card(title = "This is the title!")
 ```

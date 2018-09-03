@@ -2,9 +2,12 @@ Package: headR
 Type: Package
 Title: Package to create social media cards
 Version: 0.1.1
-Authors@R: person("Colin", "Gillespie",  
+Authors@R: c(person("Theo", "Roe",  
+  email="theo@jumpingrivers.com", 
+  role = c("aut", "cre")),
+  person("Colin", "Gillespie",  
   email="csgillespie@gmail.com", 
-  role = c("aut", "cre"))
+  role = c("ctb")))
 Description: An R package to create social media sharing cards for blog posts.
 URL: https://jumpingrivers.com
 License: GPL-2 | GPL-3

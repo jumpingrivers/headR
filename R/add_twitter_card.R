@@ -9,7 +9,7 @@
 #' @param content_title Title for card content, max 70 characters. All twitter cards require this.
 #' @param content_description Description for card content, max 200 characters.
 #' @param content_image Link for the content image.
-#' @param file File name to put in the header of Rmd doc, must be .HTML.
+#' @param file File name to put in the header of Rmd doc, must be .HTML. Defaults to twitter_card.HTML
 #'
 #' @export
 #'
@@ -20,7 +20,7 @@ add_twitter_card = function(card_type = "summary",
                             content_title = NULL,
                             content_description = NULL,
                             content_image = NULL,
-                            file = NULL) {
+                            file = "twitter_card.HTML") {
   if (is.null(content_title)) {
     stop(
       "Cards must have a content title as specified by twitter, see
@@ -34,8 +34,8 @@ add_twitter_card = function(card_type = "summary",
            call. = FALSE)
     }
   }
-  if (is.null(file)) {
-    stop("You must specify a file name to be used in your Rmd header")
+  if (nchar(file) < 1) {
+    stop("You must specify a valid file name to be used in your Rmd header")
   }
   if (!(card_type %in% c("summary", "summary_large_image"))) {
     stop("Card type should be either summary or summary_large_image",

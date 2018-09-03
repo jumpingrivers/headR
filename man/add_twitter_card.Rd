@@ -6,7 +6,7 @@
 \usage{
 add_twitter_card(card_type = "summary", user = NULL,
   content_title = NULL, content_description = NULL,
-  content_image = NULL, file = NULL)
+  content_image = NULL, file = "twitter_card.HTML")
 }
 \arguments{
 \item{card_type}{Twitter card type. Must be "summary" or "summary_large_image".}
@@ -19,7 +19,7 @@ add_twitter_card(card_type = "summary", user = NULL,
 
 \item{content_image}{Link for the content image.}
 
-\item{file}{File name to put in the header of Rmd doc, must be .HTML.}
+\item{file}{File name to put in the header of Rmd doc, must be .HTML. Defaults to twitter_card.HTML}
 }
 \description{
 An easy way to create twitter summary cards for your blogdown post.

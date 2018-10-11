@@ -4,27 +4,29 @@
 \alias{add_twitter_card}
 \title{Create twitter summary cards}
 \usage{
-add_twitter_card(card_type = "summary", user = NULL,
-  content_title = NULL, content_description = NULL,
-  content_image = NULL, file = "twitter_card.HTML")
+add_twitter_card(card_type = c("summary", "summary_large_image"), title,
+  description = NULL, user = NULL, image = NULL, image_alt = NULL,
+  file = "twitter_card.html")
 }
 \arguments{
-\item{card_type}{Twitter card type. Must be "summary" or "summary_large_image".}
+\item{card_type}{Required. Twitter card type. Must be "summary" or "summary_large_image".}
+
+\item{title}{Required. Title for card content. Max 70 characters.}
+
+\item{description}{Description for card content, max 200 characters.}
 
 \item{user}{Twitter user id for the card to be linked to.}
 
-\item{content_title}{Title for card content, max 70 characters. All twitter cards require this.}
+\item{image}{Link for the content image.}
 
-\item{content_description}{Description for card content, max 200 characters.}
+\item{image_alt}{Alternate text incase image does not load.}
 
-\item{content_image}{Link for the content image.}
-
-\item{file}{File name to put in the header of Rmd doc, must be .HTML. Defaults to twitter_card.HTML}
+\item{file}{Required. File name to put in the header of Rmd doc, must be .html.}
 }
 \description{
 An easy way to create twitter summary cards for your blogdown post.
     For more details on the meta tags see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary.html
 }
 \examples{
-add_twitter_card(content_title = "Hello", file = "hello.HTML")
+add_twitter_card(title = "HeadR is great!", file = "hello.html")
 }

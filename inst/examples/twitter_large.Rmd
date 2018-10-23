@@ -16,7 +16,7 @@ headR::add_twitter_card(card_type = "summary_large_image",
                         recognized biological families. They are found on every 
                         continent except Antarctica, in every habitat on the planet 
                         that contains insect-pollinated flowering plants.", 
-                        image = "https://www.jumpingrivers.com/wp-content/uploads/2018/10/bee.jpeg",
+                        image = "bee.jpeg",
                         file = "bees.html")
 ```
 

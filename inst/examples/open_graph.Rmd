@@ -12,7 +12,7 @@ The code to produce html file containing the meta tags in the header is below. T
 ```{r, eval = FALSE}
 headR::add_og_card(card_type = "website",
                    title = "Ant are cool",
-                   image = "https://www.jumpingrivers.com/wp-content/uploads/2018/10/ant.jpg",
+                   image = "ant.jpg",
                    url = "www.jumpingrivers.com",
                    description = "Ants evolved from wasp-like ancestors in the Cretaceous period,
                    about 140 million years ago, and diversified after

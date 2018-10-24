@@ -5,7 +5,9 @@ output:
       in_header: bees.html
 ---
 
-# Large summary card example
+# Bees are cool
+
+There are nearly 20,000 known species of bees in seven recognized biological families. They are found on every continent except Antarctica, in every habitat on the planet that contains insect-pollinated flowering plants.
 
 The code to produce html file containing the meta tags in the header is below. To go back to the headR [GitHub page](https://github.com/jumpingrivers/headR). 
 

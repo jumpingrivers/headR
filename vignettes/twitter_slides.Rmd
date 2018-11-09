@@ -1,0 +1,52 @@
+---
+title: "Twitter card example"
+output: 
+  ioslides_presentation:
+    includes:
+      in_header: whyr.html
+vignette: >
+  %\VignetteIndexEntry{Twitter slides}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r echo = FALSE}
+headR::add_twitter_card(card_type = "summary_large_image", 
+                        title = "Why R?",
+                        description = "A brief history of R.", 
+                        image = "https://www.jumpingrivers.com/rpackages/headr/vignettes/whyr.jpeg",
+                        file = "whyr.html")
+```
+
+## A brief history of R
+
+  - 1993: Research project in Auckland, NZ  
+  
+  - 1995: R released as open-source software
+  
+  - 1997:
+    - R core group formed
+    - April 1st Mailing list started 
+    - April 23rd: CRAN is started (3 mirrors); now $\sim$ 140 mirrors
+
+  - 2000: R 1.0.0 released
+
+  - 2003: R Foundation founded
+
+  - 2004: Version 2.0.0
+
+  - 2013: Version 3.0.0
+  
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+

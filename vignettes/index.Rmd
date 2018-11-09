@@ -1,0 +1,45 @@
+---
+title: "Index File"
+author: "Jumping Rivers"
+output: html_document
+vignette: >
+  %\VignetteIndexEntry{Index File}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+ * [Twitter](twitter_large.html)
+ * [Twitter (slides)](twitter_slides.html)
+ * [Open graph](open_graph.html)
+ 
+
+## Example: Twitter cards for Rmd documents
+
+This vignette creates a html page containing twitter meta tags. The page is hosted at
+
+[https://www.jumpingrivers.com/rpackages/headr/vignettes/twitter_large.html](https://www.jumpingrivers.com/rpackages/headr/vignettes/twitter_large.html)
+
+To preview the twitter card for this document, copy and paste the page URL into the [twitter card validator](https://cards-dev.twitter.com/validator). 
+
+## Example: Open graph
+
+This vignette creates a html page containing open graph meta tags. The page is hosted at
+
+[https://www.jumpingrivers.com/rpackages/headr/vignettes/open_graph.html](https://www.jumpingrivers.com/rpackages/headr/vignettes/open_graph.html)
+
+## Example: Twitter cards for Rmd documents
+
+It doesn't matter if the Rmd document is a set of slides - it's still the same process.
+
+[https://www.jumpingrivers.com/rpackages/headr/vignettes/twitter_slides.html](https://www.jumpingrivers.com/rpackages/headr/vignettes/twitter_slides.html)
+
+To preview the twitter card for this document, copy and paste the page URL into the [twitter card validator](https://cards-dev.twitter.com/validator). 
+ 
+---
+
+Development of this package was supported by [Jumping Rivers](https://www.jumpingrivers.com/)
+
+```{r echo = FALSE, include = FALSE}
+fnames = list.files("vignettes", pattern = "*.Rmd$", full.names = TRUE)
+sapply(fnames, rmarkdown::render)
+```

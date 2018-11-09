@@ -1,0 +1,37 @@
+---
+title: "Bees!"
+output:
+  html_document:
+    includes:
+      in_header: 'bees.html'
+vignette: >
+  %\VignetteIndexEntry{Twitter Summary}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r echo = FALSE}
+headR::add_twitter_card(card_type = "summary_large_image", 
+  title = "Bees are cool",
+  description = "There are nearly 20,000 known species of bees in seven 
+                recognized biological families.", 
+  image = "https://www.jumpingrivers.com/rpackages/headr/vignettes/bee.jpeg",
+  file = "bees.html")
+```
+# Bees are cool
+
+There are nearly 20,000 known species of bees in seven recognized biological families. They are found on every continent except Antarctica, in every habitat on the planet that contains insect-pollinated flowering plants.
+
+The code to produce html file containing the meta tags in the header is below. To go back to the headR [GitHub page](https://github.com/jumpingrivers/headR). 
+
+```{r, eval = FALSE, tidy=FALSE}
+headR::add_twitter_card(card_type = "summary_large_image", 
+  title = "Bees are cool",
+  description = "There are nearly 20,000 known species of bees in seven 
+                 recognized biological families.", 
+  image = "https://www.jumpingrivers.com/rpackages/headr/vignettes/bee.jpeg",
+  file = "bees.html")
+```
+
+To change this to a normal sized summary card, simply change `summary_large_image` to `summary`
+

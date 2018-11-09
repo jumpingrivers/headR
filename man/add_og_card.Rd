@@ -38,6 +38,6 @@ An easy way to create open graph meta tags for your blogdown post.
 \examples{
 add_og_card(title = "HeadR is great!",
        image = "https://www.rstudio.com/wp-content/uploads/2014/06/RStudio-Ball.png",
-       url = "www.jumpingrivers.com",
+       url = "https://www.jumpingrivers.com",
        file = "hello.html")
 }

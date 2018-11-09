@@ -17,7 +17,7 @@ add_twitter_card(card_type = c("summary", "summary_large_image"), title,
 
 \item{user}{Twitter user id for the card to be linked to.}
 
-\item{image}{Link for the content image.}
+\item{image}{Link for the content image. Must be absolute path, i.e. http}
 
 \item{image_alt}{Alternate text incase image does not load.}
 

@@ -1,13 +1,8 @@
-#' @title checking function arguments
-#' @param card_type Required. Twitter card type. Must be "summary" or "summary_large_image".
-#' @param title Required. Title for card content. Max 70 characters.
-#' @param description Description for card content, max 200 characters.
-#' @param file Required. File name to put in the header of Rmd doc, must be .html.
-#'
 check_twitter_arguments = function(card_type,
                                    title,
                                    description,
-                                   file) {
+                                   file,
+                                   image) {
   if (!(card_type %in% c("summary", "summary_large_image"))) {
     stop("Card type should be either summary or summary_large_image",
          call. = FALSE)
@@ -33,10 +28,16 @@ check_twitter_arguments = function(card_type,
 
   if (nchar(file) < 1 ||
       substr(file, nchar(file) + 1 - 5, nchar(file)) != ".html") {
-    stop("You must specify a valid file name to be used in your Rmd header")
+    stop("You must specify a valid file name to be used in your Rmd header",
+         call. = FALSE)
   }
-}
 
+  if (!is.null(image) && substr(image, 1, 4) != "http") {
+    stop("You must specify the complete image location, ie. http://...",
+         call. = FALSE)
+  }
+
+}
 
 #' @importFrom glue glue
 #' @title Create twitter summary cards
@@ -48,7 +49,7 @@ check_twitter_arguments = function(card_type,
 #' @param user Twitter user id for the card to be linked to.
 #' @param title Required. Title for card content. Max 70 characters.
 #' @param description Description for card content, max 200 characters.
-#' @param image Link for the content image.
+#' @param image Link for the content image. Must be absolute path, i.e. http
 #' @param image_alt Alternate text incase image does not load.
 #' @param file Required. File name to put in the header of Rmd doc, must be .html.
 #'
@@ -64,11 +65,7 @@ add_twitter_card = function(card_type = c("summary", "summary_large_image"),
                             image_alt = NULL,
                             file = "twitter_card.html") {
   card_type = card_type[1]
-
-  check_twitter_arguments(card_type,
-                          title,
-                          description,
-                          file)
+  check_twitter_arguments(card_type, title, description, file, image)
 
   twitter_card = c(
     card = card_type,

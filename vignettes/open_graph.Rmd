@@ -1,0 +1,42 @@
+---
+title: Open Graph Tags
+output:
+  html_document:
+    includes:
+      in_header: ants.html
+vignette: >
+  %\VignetteIndexEntry{Open Graph}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+```{r echo = FALSE}
+headR::add_og_card(card_type = "website",
+                   title = "Ants are cool",
+                   image = "https://www.jumpingrivers.com/rpackages/headr/vignettes/ant.jpg",
+                   url = "https://www.jumpingrivers.com/rpackages/headr/vignettes/",
+                   description = "Ants evolved from wasp-like ancestors in the Cretaceous period,
+                   about 140 million years ago, and diversified after
+                   the rise of flowering plants",
+                   file = "ants.html")
+```
+
+# Ants are cool
+
+Ants evolved from wasp-like ancestors in the Cretaceous period,
+                   about 140 million years ago, and diversified after
+                   the rise of flowering plants
+
+The code to produce html file containing the meta tags in the header is below. To go back to the headR [GitHub page](https://github.com/jumpingrivers/headR).
+
+```{r, eval = FALSE}
+headR::add_og_card(card_type = "website",
+                   title = "Ants are cool",
+                   image = "https://www.jumpingrivers.com/rpackages/headr/vignettes/ant.jpg",
+                   url = "https://www.jumpingrivers.com/rpackages/headr/vignettes/",
+                   description = "Ants evolved from wasp-like ancestors in the Cretaceous period,
+                   about 140 million years ago, and diversified after
+                   the rise of flowering plants",
+                   file = "ants.html")
+```
+
+

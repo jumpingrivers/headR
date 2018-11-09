@@ -8,6 +8,12 @@ Status](https://travis-ci.org/jumpingrivers/headR.svg?branch=master)](https://tr
 markdown files. These cards are located in the meta tags of generated
 HTML document and allow you add richer content when sharing your site.
 
+To install the package, you need the **devtools** package
+
+``` r
+devtools::install_github("jumpingrivers/headR")
+```
+
 Twitter Cards
 -------------
 

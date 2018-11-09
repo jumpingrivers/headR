@@ -23,7 +23,7 @@ are located in the meta tags of generated HTML document and allow you add richer
 content when sharing your site.
 
 To install the package, you need the __devtools__ package
-```{r}
+```{r, eval = FALSE}
 devtools::install_github("jumpingrivers/headR")
 ```
 

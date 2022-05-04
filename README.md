@@ -1,6 +1,7 @@
 HeadR <img src="man/img/logo.png" align="right" />
 ==================================================
 
+[![Lifecycle: deprecated](https://img.shields.io/badge/lifecycle-deprecated-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#deprecated)
 [![Build
 Status](https://travis-ci.org/jumpingrivers/headR.svg?branch=master)](https://travis-ci.org/jumpingrivers/headR)
 
